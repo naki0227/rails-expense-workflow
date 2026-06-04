@@ -48,17 +48,17 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
   # Audits gems for known security defects (use config/bundler-audit.yml to ignore issues)
-  gem "bundler-audit", require: false
+  gem "bundler-audit", require: false # 依存ライブラリの脆弱性検査
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
-  gem "brakeman", require: false
+  gem "brakeman", require: false  # Railsアプリの危険な書き方(SQLインジェクション, XSSなど)を検知
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 
-  gem "rspec-rails"
+  gem "rspec-rails" # specフォルダでテストが書かれたものを実行する
 
-  gem "rubocop-rspec"
+  gem "rubocop-rspec" # styleチェック
 end
 
 group :development do
