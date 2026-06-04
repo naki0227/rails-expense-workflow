@@ -15,3 +15,10 @@
 
 ## メモ
 最初は複雑にせず、3 ロールから始める。
+
+## テーブル
+users:
+    * name / 社員の名前
+    * email / 社員のemail　ログイン認証
+    * role [employee, manager, admin] / 閲覧や編集権限の分離
+    * Deviseが使う認証用カラム / パスワードとかリセット管理
