@@ -39,7 +39,10 @@
   - `role` enum
   - model spec
 - `6. ExpenseRequest モデル設計`
-  - 未着手
+  - 完了
+  - migration
+  - model
+  - model spec
 - `7. ExpenseRequest の CRUD 実装`
   - 未着手
 - `8. 申請ステータス遷移の実装`
@@ -71,16 +74,17 @@
   - RSpec / RuboCop / Brakeman / bundler-audit 導入
   - GitHub Actions CI 作成
   - `User` モデルと最初の spec
+  - `ExpenseRequest` モデルと最初の spec
 - いまからやるもの
-  - `ExpenseRequest` の設計
-  - 状態の持ち方の決定
-  - CRUD とワークフロー本体の実装
+  - `ExpenseRequest` の CRUD
+  - 状態を変える操作の実装
+  - ワークフロー本体の画面と認可
 
 ## 残りステップ数
-- 全17ステップ中、完了4、ほぼ完了1、未着手12
-- 次の実質的な開始地点は `6. ExpenseRequest モデル設計`
+- 全17ステップ中、完了5、ほぼ完了1、未着手11
+- 次の実質的な開始地点は `7. ExpenseRequest の CRUD 実装`
 
 ## 次にやること
-1. `docs/design/` に `ExpenseRequest` 設計メモを追加する
-2. 必要なカラムと関連を決める
-3. migration / model / spec をセットで作る
+1. `ExpenseRequest` 一覧・作成・詳細・編集の責務を整理する
+2. controller / routes / view の最小構成を決める
+3. model に対応する request spec か system spec の方針を決める
