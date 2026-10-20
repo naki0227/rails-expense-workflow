@@ -5,7 +5,7 @@
 ## 参照する共通方針
 このプロジェクトの docs 運用は、次の共通方針を基準にします。
 
-- `/Users/nagaseibuki/Documents/github-repos/naki0227/how_to_learn/LEARNING_LOG_POLICY.md`
+- `how_to_learn/LEARNING_LOG_POLICY.md`（別リポジトリ）
 
 まず共通方針を読んでから、このプロジェクト固有の docs を読む前提にします。
 
